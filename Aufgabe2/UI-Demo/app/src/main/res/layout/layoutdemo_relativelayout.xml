@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view"
+        layout_alignParentStart="true"
+        layout_alignParentTop="true"
+        layout_marginStart="75dp"
+        layout_marginTop="43dp"
+
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/holo_orange_light"
+        android:id="@+id/view8" />
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view5"
+        layout_alignParentBottom="true"
+        layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view12" />
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view6"
+        layout_alignParentEnd="true"
+        layout_alignParentTop="true"
+        android:layout_width="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/holo_blue_light"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/view13" />
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view7"
+        layout_alignParentTop="true"
+        layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_light"
+        android:layout_toEndOf="@+id/view8"
+        android:id="@+id/view9" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Ich bin ein relative Layout" />
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view11"
+        layout_below="@+id/view9"
+        layout_toEndOf="@+id/view8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view9"
+        android:layout_toEndOf="@+id/view8"
+        android:background="@color/colorPrimary" />
+
+    <view
+        class="android.support.constraint.ConstraintLayout"
+        id="@+id/view14"
+        layout_above="@+id/view12"
+        layout_toStartOf="@+id/view13"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@color/colorAccent"
+        android:layout_above="@+id/view12"
+        android:layout_toStartOf="@+id/view13" />
+</RelativeLayout>

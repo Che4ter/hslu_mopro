@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wtf.a42.mopro.sw02.ui_demo.MainActivity">
+
+    <ScrollView
+        style="@android:style/Widget.Material.Light.ScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:paddingTop="0dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="HSLU - Mobile Programming"
+                android:textAppearance="@android:style/TextAppearance.Material.Title"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="-84dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Willkommen zum zweiten Kursblock"
+                android:textAppearance="@android:style/TextAppearance.Material" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+               <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                   <TextView
+                       android:id="@+id/textView3"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="1. Layouts"
+                       android:textAppearance="@android:style/TextAppearance.Material.Widget.Toolbar.Title" />
+                   <TextView
+                       android:id="@+id/textView4"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="Wählen Sie eines der folgenden Layouts für eine Demo" />
+                   <RadioGroup
+                       android:id="@+id/rdLayoutDemo"
+                       android:layout_width="match_parent"
+                       android:layout_height="match_parent"
+                       android:layout_weight="1"
+                       android:checkedButton="@+id/radioButtonLinearLayout"
+                       android:orientation="horizontal">
+
+                       <RadioButton
+                           android:id="@+id/radioButtonLinearLayout"
+                           style="@android:style/Widget.Material.CompoundButton.RadioButton"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="LinearLayout" />
+
+                       <RadioButton
+                           android:id="@+id/radioButtonRelativeLayout"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:layout_weight="1"
+                           android:text="RelativeLayout" />
+                   </RadioGroup>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="2. Screen-Orientierung und Übersetzung"
+                        android:textAppearance="@android:style/TextAppearance.Material.Widget.Toolbar.Title" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Diese Seite hat ein Landscapemodus und eine Schweizerdeutsche Übersetzung" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="3. Views und Events"
+                        android:textAppearance="@android:style/TextAppearance.Material.Widget.Toolbar.Title" />
+
+                    <Button
+                        android:id="@+id/buttonDemoView"
+                        style="@android:style/Widget.Material.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Aktivity mit demo Views anzeigen" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="4. Spinner"
+                        android:textAppearance="@android:style/TextAppearance.Material.Widget.Toolbar.Title" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/spinner_items"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
