@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -29,23 +30,74 @@
             android:text="@string/onresume_number" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textViewTeePreferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Ich trinke am liebsten ..." />
+            android:text="@string/ich_trinke_am_liebsten" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/buttonEditPreferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="editPreferencesOnClick"
             android:text="Tee Preferences editieren" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/buttonSetDefaultPreferences"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="setDefaultPreferencesOnClick"
             android:text="TEE Defaults-Prefs setzen"
             android:textAppearance="@android:style/TextAppearance.Material.Button" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dateisystem"
+            android:textAppearance="@android:style/TextAppearance.Material.Menu" />
+
+        <CheckBox
+            android:id="@+id/checkbox_externalstorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="External storage is mounted(writable)"
+            android:text="Externen Speicher benutzen"
+            tools:text="Externen Speicher benutzen" />
+
+        <EditText
+            android:id="@+id/editText"
+            style="@android:style/Widget.Material.Light.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Irgend ein Text"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/saveButton"
+                style="@android:style/Widget.Material.Button.Borderless.Colored"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="saveButtonOnClick"
+                android:text="Speichern" />
+
+            <Button
+                android:id="@+id/loadButton"
+                style="@android:style/Widget.Material.Light.Button.Borderless.Colored"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:onClick="loadButtonOnClick"
+                android:text="Laden" />
+        </LinearLayout>
     </LinearLayout>
 
 

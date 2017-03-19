@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Tee Präferenzen">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_preference_tee_gesuesst"
+            android:summary="Soll der Tee gesüsst werden?"
+            android:title="Gesüsster Tee? " />
+    </PreferenceCategory>
+    <ListPreference
+
+        android:defaultValue="Honig"
+        android:dependency="check_box_preference_tee_gesuesst"
+        android:entries="@array/tee_suessstoffe"
+        android:entryValues="@array/tee_suessstoffe"
+        android:key="list_preference_tee_suessstoff"
+        android:summary="Womit soll der Tee gesüsst werden?"
+        android:title="Süssstoff" />
+    <EditTextPreference
+        android:defaultValue="@string/tee_marke_default_value"
+        android:key="edit_text_preference_tee_marke"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:summary='z.B. "Lipton/Pfefferminztee"'
+        android:title="Bevorzugte Marke/Sorte" />
+
+
+</PreferenceScreen>
